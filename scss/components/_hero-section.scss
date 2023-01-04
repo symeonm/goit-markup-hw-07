@@ -1,0 +1,64 @@
+/*hero*/
+
+.hero {
+    max-height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/heroy.jpg);
+    background-color: #000000;
+
+    &__section {
+            justify-content: center;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            text-align: center;
+        }
+    
+    &__title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+    &__title--text {
+            width: 696px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ffffff;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            margin: 0;
+        }
+    
+    &__button {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            letter-spacing: 0.06em;
+    
+            padding: 10px 32px;
+            border: 0px;
+            cursor: pointer;
+            background: $brand-color;
+            font-family: "Roboto";
+            font-style: normal;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.87;
+    
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+    
+}
+

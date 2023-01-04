@@ -1,0 +1,72 @@
+/*benefits*/
+
+.none-title {
+    display: none;
+}
+
+.benefits {
+    display: flex;
+
+    list-style-type: none;
+
+    &__item {
+            width: 270px;
+        }
+    
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    
+        &__icon-antenna {
+            display: flex;
+            margin-bottom: 30px;
+            padding: 25px 102.34px;
+            background: #f5f4fa;
+            border-radius: 4px;
+        }
+    
+        &__icon-clock {
+            display: flex;
+            padding: 25px 101.5px;
+            margin-bottom: 30px;
+            background: #f5f4fa;
+            border-radius: 4px;
+        }
+    
+        &__icon-diagram {
+            display: flex;
+            padding: 33.2px 100px 33.11px 100px;
+            margin-bottom: 30px;
+            background: #f5f4fa;
+            border-radius: 4px;
+        }
+    
+        &__icon-astronaut {
+            display: flex;
+            padding: 25px 100px;
+            margin-bottom: 30px;
+            background: #f5f4fa;
+            border-radius: 4px;
+        }
+    
+        &__title {
+            margin-bottom: 10px;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+        }
+    
+        &__text {
+            color: #757575;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+        }
+    
+        &__text:last-child {
+            margin-bottom: 0;
+        }
+}
