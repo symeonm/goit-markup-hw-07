@@ -2,6 +2,10 @@
 
 .section--work {
     padding-top: 0;
+
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .work {

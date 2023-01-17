@@ -5,48 +5,94 @@
 }
 
 .benefits {
-    display: flex;
+   
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
 
-    list-style-type: none;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-wrap: nowrap;
 
-    &__item {
-            width: 270px;
-        }
+    }
+
     
-        &__item:not(:last-child) {
-            margin-right: 30px;
+
+        &__item {
+            
+
+                @media screen and (min-width: $mobile) {
+                    
+                    height: 120px;
+                }
+
+                &:not(:last-child) {
+                    @media screen and (max-width: 767px) {
+                        margin-bottom: 136px;
+                    } 
+                }
+
+                &:last-child {
+                    @media screen and (max-width: 767px) {
+                        margin-bottom: 106px;
+                    }
+                }
+            
+                @media screen and (min-width: $tablet) {
+                    flex-basis: calc((100% - 30px) / 2);
+                    height: 120px;
+                    margin-bottom: 134px;
+                }
+            
+                @media screen and (min-width: $desktop) {
+                    width: 270px;
+                    height: 120px;
+                }
+
         }
+       
+        
     
         &__icon-antenna {
             display: flex;
             margin-bottom: 30px;
-            padding: 25px 102.34px;
             background: #f5f4fa;
             border-radius: 4px;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
         }
     
         &__icon-clock {
             display: flex;
-            padding: 25px 101.5px;
             margin-bottom: 30px;
             background: #f5f4fa;
             border-radius: 4px;
+            align-items: center;
+                justify-content: center;
+            height: 120px;
         }
     
         &__icon-diagram {
             display: flex;
-            padding: 33.2px 100px 33.11px 100px;
             margin-bottom: 30px;
             background: #f5f4fa;
             border-radius: 4px;
+            align-items: center;
+                justify-content: center;
+            height: 120px;
         }
     
         &__icon-astronaut {
             display: flex;
-            padding: 25px 100px;
             margin-bottom: 30px;
             background: #f5f4fa;
             border-radius: 4px;
+            align-items: center;
+                justify-content: center;
+            height: 120px;
         }
     
         &__title {
@@ -56,6 +102,10 @@
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.03em;
+
+            @media (min-width: 769px) {
+                text-align: center;
+            }
         }
     
         &__text {
@@ -65,8 +115,4 @@
             line-height: 1.71;
             letter-spacing: 0.03em;
         }
-    
-        &__text:last-child {
-            margin-bottom: 0;
-        }
-}
+}        

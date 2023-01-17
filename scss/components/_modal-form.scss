@@ -5,17 +5,29 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 528px;
-    height: 100%;
-    max-height: 581px;
-
     padding: 40px 39px 40px 41px;
+    width: 90%;
 
     border-radius: 4px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    @media (min-width: 480px) {
+    width: 100%;
+        max-width: 450px;
+        height: 100%;
+        max-height: 609px;
+        }
+
+
+        @media (min-width: $desktop) {
+            width: 100%;
+                max-width: 528px;
+                height: 100%;
+                max-height: 581px;
+        }
+
 
     &__close {
             display: flex;
@@ -42,10 +54,11 @@
 
 
 .form-user {
-    width: 448px;
+    width: 100%;
 
     &__title {
             display: flex;
+            text-align: center;
             justify-content: center;
             margin-bottom: 12px;
     
@@ -133,8 +146,13 @@
             margin-top: 20px;
     
             font-weight: 400;
+            font-size: 12px;
+                line-height: 1.16;
+
+            @media (min-width: $desktop) {
             font-size: 14px;
             line-height: 1.41;
+            }
     
             letter-spacing: 0.03em;
             color: #757575;
@@ -146,8 +164,7 @@
             appearance: none;
 
             &:checked+.form-user__checkbox-icon {
-                    border-color: $brand-color;
-            
+            border: none;
                     background-image: url(../images/icon\ check.svg);
                     background-size: contain;
             
@@ -160,7 +177,7 @@
             width: 16px;
             height: 15px;
     
-            border: 1.8px solid #212121;
+            border: solid #212121;
             border-radius: 2px;
             margin-right: 7px;
         }
